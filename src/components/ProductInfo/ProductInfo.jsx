@@ -2,15 +2,7 @@ import React from 'react';
 import styles from './productInfo.module.css';
 
 
-export const ProductInfo = () => {
-  const item = {
-    brand: 'Tiger of Sweden',
-    title: 'Leonard coat',
-    description: 'Minimalistic coat in cotton-blend',
-    descriptionFull: 'Men\'s minimalistic overcoat in cotton-blend. Features a stand-up collar, concealed front closure and single back vent. Slim fit with clean, straight shape. Above-knee length.',
-    price: 399,
-    currency: '£'
-  }
+export const ProductInfo = ({ item }) => {
   return (
       <div className={styles["main-content"]}>
         <h2>{item.brand}</h2>
@@ -29,3 +21,4 @@ export const ProductInfo = () => {
       </div>
   )
 }
+
